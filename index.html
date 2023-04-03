@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halloween Runner | By Thejan Vishmitha</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+</head>
+<body onkeyup="keycheck(event)">
+    <div id="welcome_page"  class="welcome_page" style="height: 100%;background-image: url(images/background-3.png);background-size: cover;background-repeat: no-repeat;position: fixed;width: 100%;">
+        <div class="welcome-text">Welcome to</div>
+        <div class="name">Halloween Runner</div>
+        <div class="start-section">
+            <button class="btn-start" onclick="start_btn()">Start</button>
+        </div>
+        <div class="d-flex j-c-between footer-section">
+            <div class="footer-item">Press Enter key to start</div>
+            <div class="footer-item">Press Space or Arrow up key to Jump</div>
+        </div>
+    </div>
+    <div id="playing-game" class="playing-game" style="height: 100%; width: 100%; display: none;background-image: url(images/background-1.png);background-size: cover;position: fixed;">
+        <div class="panel">
+            <div class="instruction" id="insturction">We are ready! if you're ready click Enter key to start</div>
+            <div class="score" id="score">You're Score : 000</div>
+        </div>
+        <!-- <img src="/images/tree.png" alt="Tree" style="margin-top: 245px;margin-right: 100px;">
+        <img src="/images/tree.png" alt="Tree" style="margin-top: 255px;margin-right: 100px;"> -->
+
+        <img src="images/pumpkinhead/run (1).png" alt="Character" class="character" id="runner">
+    </div>
+    <div class="sup-1">
+        <div class="result" id="result">
+            You're score is 
+            <div id="reScore" class="reScore"></div>
+            <p>We hope you will have best luck next time</p>
+            <button class="btn-re" onclick="restart()"><img src="images/restart.png" alt="restart" class="res"></button>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
